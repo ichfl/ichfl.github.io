@@ -1,0 +1,690 @@
+@maincolorbg: #fff;
+@mainfont: 400 16px Ubuntu, sans-serif;
+@maincolor: #828282; 
+@btnColor1: #7ea4e8;
+@btnColor2: #6a7079;
+
+/*Общие стили:*/
+body{
+	background-color: @maincolorbg;
+	font: @mainfont;
+	min-width: 320px;
+	color: @maincolor;
+}
+a{
+	font: 700 16px Montserrat, sans-serif;
+	color: #2cc7c1;
+}
+a:hover{
+	color: #2cc7c1;
+}
+a:link, a:hover, a:active, a:visited {
+ outline: none;
+ border: none;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+section{
+	position: relative;
+}
+h2{
+	font: 30px Montserrat, sans-serif;
+	margin-top: 0;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.button{
+	width: 157px;
+	height: 50px;
+	border-radius: 5px;
+	display: inline-block;
+	a{
+		display: inline-block;
+		width: 157px;
+		height: 50px;
+		border-radius: 5px;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		font: 17px Montserrat, sans-serif;
+		line-height: 50px;
+		transition: background-color .2s;
+		cursor: pointer;
+		text-decoration: none;
+		&:hover,&:active,&:visited{
+			color: #fff;
+			text-decoration: none;
+		}
+		i{
+			font-size: 16px;
+		}
+	}
+}
+.button.blue{
+	a{
+		background: @btnColor1;
+		&:hover{
+			background-color: lighten(@btnColor1, 5%);
+		}
+	}
+}
+.button.grey{
+	a{
+		background: @btnColor2;
+		&:hover{
+			background-color: lighten(@btnColor2, 5%);
+		}
+	}
+}
+.p_first{
+	font-size: 22px;
+	margin-bottom: 25px;
+	line-height: 32px;
+	text-align: left;
+	margin-left: 0px;
+}
+.p_in_col{
+	font: 17px Ubuntu, sans-serif;
+	color: #828689;
+	line-height: 31px;
+	margin-bottom: 25px;
+	text-align: left;
+	margin-left: 0px;
+}
+.h2_centor, .p_centor{
+	text-align: center;
+}
+.p_centor{
+	font: 22px Ubuntu, sans-serif;
+	max-width: 540px;
+	line-height: 35px;
+	margin: auto;
+}
+.a_last_in_col{
+	font: bold 17px Montserrat, sans-serif;
+	color: #2cc7c1;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 40px;
+}
+/*Общие стили (конец)*/
+html, body{
+	height: 100%;
+}
+header{
+	background: #525b64 url(../img/7.jpg) center no-repeat;
+	background-size: cover;
+	width: 100%;
+	/*min-height: 100vh;*/
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	display: table;
+	.header{
+		padding: 15px;
+		display: table-cell;
+		vertical-align: middle;
+		width: 100%;
+		max-width: 650px;
+		margin: auto;
+		padding-bottom: 30px;
+		padding-top: 20px;
+		img{
+			max-width: 100%;
+			margin-bottom: 10px;
+		}
+		h1{
+			font: bold 31px Montserrat, sans-serif;
+			text-transform: uppercase;
+			margin-bottom: 40px;
+		}
+		p{
+			font: normal 20px Ubuntu, sans-serif;
+			margin-bottom: 40px;
+			max-width: 650px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.button{
+			margin: 0 15px 15px;
+		}
+
+	}
+} /*header*/
+
+/*section1:*/
+.section1{
+	padding-top: 100px;
+	padding-bottom: 90px;
+	border-bottom: 8px solid #f0f0f1;
+	.row1{
+		margin-bottom: 80px;
+		.text{
+			h2{
+				margin-bottom: 40px;
+				text-align: left;
+			}
+		}
+	.tab{
+		.nav{
+			border: 3px solid #ececec;
+			border-bottom: none;
+			li{
+				background-color: #ececec;
+				&.active{
+					background-color: #fff;
+				}
+				a{
+					border: none;
+					font: bold 18px Ubuntu, sans-serif;
+					color: #9097a1;
+				}
+			}
+		}
+		.tab-content{
+			border: 3px solid #ececec;
+			border-top: none;
+			padding: 35px 20px 10px;
+			p{
+				font: normal 17px Ubuntu, sans-serif;
+				color: #999999;
+				margin-bottom: 35px;
+				text-align: left;
+			}
+			ul{
+				float: left;
+				padding-left: 20px;
+				li{
+					font: normal 17px Ubuntu, sans-serif;
+					color: #999999;
+					list-style-type: none;
+					margin-bottom: 20px;
+					i{
+						color: #2cc7c1;
+						padding-right: 10px;
+					}
+				}
+			}
+			img{
+				float: right;
+			}
+			@media (max-width: 1202px) and (min-width: 992px), 
+			(max-width: 540px){
+				img{
+					float: none;
+				}
+			} 
+		#profile{
+			ul, img{
+				float: left;
+				margin-right: 25px;
+				margin-bottom: 15px;
+			}
+		}
+		}
+	}
+	} /*.row1*/
+
+	.row2{
+		text-align: center;
+		margin-top: 60px;
+		margin-bottom: 20px;
+		.speakers{
+			position: relative;
+			div{
+				width: 139px;
+				height: 139px;
+				border-radius: 50%;
+				background-color: #2cc7c1;
+				margin: auto;
+			}
+			img{
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 140px;
+				height: 140px;
+				border-radius: 50%;
+				background-color: #2cc7c1;
+				transition: .2s;
+			}
+			h3{
+				text-transform: uppercase;
+				font: 550 20px Ubuntu, sans-serif;
+				line-height: 35px;
+				transition: color .2s;
+			}
+		}
+		.speakers:hover h3{
+			cursor: pointer;
+			color: #2cc7c1;
+		}
+		.speakers:hover img{
+			cursor: pointer;
+			opacity: .7;
+		}
+		p{
+			font: 16px Ubuntu, sans-serif;
+			max-width: 230px;
+			line-height: 25px;
+			margin: auto;
+			margin-bottom: 35px;
+		}
+		@media (max-width: 768px) {
+			p{
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+	.modal-body{
+		img{
+			float: left;
+			margin: 12px;
+			margin-top: 6px;
+			margin-bottom: 0;
+		}
+		p{
+			max-width: 100%;
+			width: 95%;
+			text-align: left;
+			margin-bottom: 10px;
+		}
+	}
+	} /*.row2*/
+	.button.blue{
+		display: block;
+		margin: 30px auto 0px;
+	}
+} /*.section1*/
+
+
+
+
+
+.section2{
+	padding-top: 100px;
+	padding-bottom: 80px;
+	.row1{
+		margin-bottom: 75px;
+		.tab{
+			.nav{
+				border: 3px solid #ececec;
+				border-bottom: none;
+				li{
+					background-color: #ececec;
+					.active{
+						background-color: #fff;
+						border: none;
+					}
+					a{
+						border: none;
+						font: bold 18px Ubuntu, sans-serif;
+						color: #9097a1;
+					}
+					a:hover, a:active, a:link{
+						border: none;
+					}
+				}
+			}
+			.tab-content{
+				border: 3px solid #ececec;
+				border-top: none;
+				padding: 35px 20px 10px;
+				.p_link{
+					margin-bottom: 20px;
+					cursor: pointer;
+					margin-bottom: 25px;
+					position: relative;
+					font: 500 18px Ubuntu, sans-serif;
+					.text{
+						padding-left: 25px;
+					}
+					.time{
+						display: inline-block;
+						width: 95px;
+						color: #fff;
+						background-color: #2cc7c1;
+						padding: 4px 10px;
+						border-radius: 4px;
+						margin-right: 30px;
+						margin-bottom: 2px;
+					}
+					.text{
+						width: 65%;
+						padding-left: 0;
+						display: inline-block;
+					}
+					.indicator{
+						position: absolute;
+						right: 0;
+						top: 3px;
+						font-size: 20px;
+						color: #2cc7c1;
+					}
+				}
+				.text_hide{
+					margin-bottom: 40px;
+				}
+				p{
+					font: normal 17px Ubuntu, sans-serif;
+					color: #999999;
+					text-align: left;
+				}
+
+				
+			}
+		} /*tab*/
+	} /*row1*/
+	.row2{
+		margin-bottom: 80px;
+		.embed-responsive{
+			margin-top: 8px;
+			margin-bottom: 70px;
+		}
+	} /*row2*/
+	.row3{
+			#carousel-example-generic{
+				.carousel-indicators{
+					/*outline: 2px solid red;*/
+					width: 120px;
+					left: 12px;
+					bottom: 20px;
+					margin: 0;
+					li{
+						width: 14px;
+						height: 14px;
+						border: 2px solid #65d2ce;
+					}
+					li.active{
+						background-color: #65d2ce;
+					}
+				}
+				.carousel-inner{
+					margin-top: 8px;
+					position: relative;
+					.item{
+						img{
+							width: 100%;
+							height: auto;
+						}
+					}
+				}
+			}
+		} /*row3*/
+} /*.section2*/
+
+.section3{
+	padding-top: 100px;
+	padding-bottom: 90px;
+	background-color: #f3f3f3;
+	h2{
+		font: 400 30px Montserrat, sans-serif;
+		text-align: center;
+	}
+	p{
+		font: 400 22px Ubuntu, sans-serif;
+		text-align: center;
+		max-width: 550px;
+		margin: auto;
+	}
+	.wr_form{
+		padding: 50px;
+		padding-bottom: 0px;
+		background-color: #fff;
+		border-radius: 5px;
+		margin-top: 60px;
+		margin-bottom: 60px;
+		.elForm{
+			margin-bottom: 50px;
+		}
+		form{
+			input{
+				width: 210px;
+				height: 50px;
+				border: none;
+				border-radius: 5px;
+				background-color: #efefef;
+				padding-left: 20px;
+				font: 400 18px Ubuntu, sans-serif;
+				color: #6a7079;
+				&:focus{
+					border-radius: 5px;
+					border: 2px solid #95e3e0;
+					background-color: #fff;
+					outline: none;
+				}
+			}
+			.select_out_wr{
+				position: relative;
+				height: 50px;
+				.select_wr{
+					position: absolute;
+					top: 0;
+					left: 0;
+					background-color: #525b64;
+					border-radius: 5px;
+					padding: 0;
+					width: 210px;
+					.seletPlanJs{
+						width: 210px;
+						height: 50px;
+						background-color: #2cc7c1;
+						border-radius: 5px;
+						font: 400 18px Ubuntu, sans-serif;
+						color: #fff;
+						line-height: 50px;
+						padding-left: 20px;
+						position: relative;
+						p{
+							padding-left: 0;
+							text-align: left;
+							padding-top: 12px;
+
+						}
+						.planOpenWr{
+							width: 35px;
+							height: 50px;
+							position: absolute;
+							top: 0;
+							right: 0;
+							padding-top: 22px;
+							padding-left: 5px;
+							cursor: pointer;
+							&:hover .planOpen{
+								border-top-color: lighten(#219d99, 3%);
+							}
+							.planOpen{
+								width: 0;
+								height: 0;
+								border: 10px solid transparent;	
+								border-top: 10px solid #219d99;
+							}
+						}
+					}
+					.planJs{
+						width: 210px;
+						height: 40px;
+						border-radius: 5px;
+						padding-left: 20px;
+						font: 400 18px Ubuntu, sans-serif;
+						color: #2cc7c1;
+						line-height: 40px;
+						cursor: pointer;
+						&:hover{
+							color: #fff;
+						}
+					}
+				}
+			}
+			.button_form_wr{
+				position: relative;
+				i{
+					position: absolute;
+					top: 19px;
+					left: 122px;
+					color: #fff;
+				}
+				#button_form{
+					padding-left: 0;
+					width: 157px;
+					height: 50px;
+					border-radius: 5px;
+					text-align: center;
+					color: #fff;
+					background-color: lighten(#7ea4e8, 20%);
+					text-transform: uppercase;
+					font: 17px Montserrat, sans-serif;
+					line-height: 50px;
+					transition: background-color .2s;
+					text-decoration: none;
+					cursor: default;
+					&:hover, &:focus{
+						color: #fff;
+						text-decoration: none;
+						border: none;
+						cursor: default;
+					}
+				}
+			}
+			@media (max-width: 768px) {
+				input{
+					width: 100%;
+				}
+				.select_out_wr{
+					width: 100%;
+					.select_wr{
+						width: 100%;
+						z-index: 15;
+						.seletPlanJs{
+							width: 100%;
+						}
+						.planJsWr{
+							width: 100%;
+							.planJs{
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		} /*form*/
+	} /*wr_form*/
+	@media (max-width: 450px) {
+		.wr_form{
+			padding: 20px 20px 0px;
+			.elForm{
+				margin-bottom: 20px;	
+			}
+		}
+	}
+} /*section3*/
+@media (max-width: 450px) {
+	.section3 {
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+}
+.sponsors{
+	padding-top: 60px;
+	padding-bottom: 10px;
+	.wrImg{
+		margin-bottom: 50px;
+		img{
+			display: block;
+			margin: auto;
+			max-width: 100%;
+		}
+
+	}
+	@media (max-width: 400px) {
+		.wrImg{
+			width: 100%;
+		}
+	}
+} /*sponsors*/
+
+/*footer (start)*/
+footer{
+	background-color: #525b64;
+	padding-top: 90px;
+	padding-bottom: 55px;
+	.col_left{
+		margin-bottom: 40px;
+	}
+	h2{
+		font: 400 25px Ubuntu, sans-serif;
+		color: #fff;
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	p{
+		font: 400 16px Ubuntu, sans-serif;
+		color: #cdd0d2;
+		text-align: left;
+		margin-bottom: 30px;
+		line-height: 25px;
+	}
+	.like_img{
+		margin-right: 20px;
+	}
+	h3{
+		font: 500 20px Ubuntu, sans-serif;
+		color: #fff;
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+	.tel, .mail, .skype{
+		margin-bottom: 10px;
+		text-decoration: none;
+		i{
+			padding-right: 10px;
+		}
+	}
+	a, a:hover, a:visited, a:active, a:link{
+		color: #2cc7c1;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:visited{
+		text-decoration: underline;
+	}
+	a:hover{
+		cursor: pointer;
+		text-decoration: underline;
+	}
+} /*footer*/
+
+@media (max-width: 450px) {
+	.section1{
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.section2{
+		padding-top: 80px;
+		padding-bottom: 80px;
+		.row2{
+			margin-bottom: 30px;
+		}
+	}
+	footer{
+		padding-top: 70px;
+		padding-bottom: 50px;
+	}
+}
+
+.copyright{
+	background-color: #3f464c;
+	padding-top: 12px;
+	padding-bottom: 2px;
+	p{
+		font: 500 14px Ubuntu, sans-serif;
+		color: #cacaca;
+		text-align: left;
+	}
+}
+
